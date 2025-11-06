@@ -10,7 +10,7 @@ export default function Topbar() {
                     <div className="flex items-center gap-12">
                         <Image
                             src={"/images/logo.png"}
-                            alt="banner"
+                            alt="banner-logo"
                             width={32}
                             height={28}
                         />

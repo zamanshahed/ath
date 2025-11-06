@@ -7,7 +7,7 @@ interface RoundCardProps {
 
 const RoundCard: React.FC<RoundCardProps> = ({ icon, unreadCount }) => {
   return (
-    <div className="relative w-10 h-10 rounded-full bg-white/20 backdrop-blur-md border-l border-r rotate-45 border-white/50 flex items-center justify-center">
+    <div className="relative w-10 h-10 rounded-full bg-white/30 backdrop-blur-md border-l border-r rotate-45 border-white/50 flex items-center justify-center">
       <div className="relative -rotate-45">
         {icon}
         
