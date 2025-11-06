@@ -4,6 +4,9 @@ import BlueEllipse from "./components/layout/BlueEllipse";
 import Sidebar from "./components/layout/Sidebar";
 import Topbar from "./components/layout/Topbar";
 import "./globals.css";
+import LeftEclipse from "./components/layout/LeftEclipse";
+import RightEclipse from "./components/layout/RightEclipse";
+import MidEclipse from "./components/layout/MidEclipse";
 
 const inter = Inter({
     variable: "--font-inter",
@@ -32,6 +35,9 @@ export default function RootLayout({
                 }}
             >
                 <BlueEllipse />
+                <LeftEclipse />
+                <RightEclipse />
+                <MidEclipse />
                 <Topbar />
                 <Sidebar />
                 {children}
