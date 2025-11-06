@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import Topbar from "./components/layout/Topbar";
+import BlueEllipse from "./components/layout/BlueEllipse";
 import Sidebar from "./components/layout/Sidebar";
+import Topbar from "./components/layout/Topbar";
+import "./globals.css";
 
 const inter = Inter({
     variable: "--font-inter",
@@ -25,15 +26,14 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${inter.variable} antialiased bg-[#E7F2F5]`}
+                className={`${inter.variable} antialiased bg-[#E7F2F5] pt-[108px] pl-[120px] pr-[40px] max-w-[1440px] mx-auto`}
                 style={{
                     fontFamily: inter.style.fontFamily,
                 }}
             >
-                {/* <div className="min-h-[1200px] mb-20"> */}
-                    <Topbar />
-                    <Sidebar />
-                {/* </div> */}
+                <BlueEllipse />
+                <Topbar />
+                <Sidebar />
                 {children}
             </body>
         </html>
