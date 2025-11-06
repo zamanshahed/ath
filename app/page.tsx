@@ -1,9 +1,9 @@
-import Image from "next/image";
+import BlueEllipse from "./components/layout/BlueEllipse";
 
 export default function Home() {
     return (
-        <>
-            <h1 className="text-3xl font-bold underline">Home</h1>
-        </>
+        <div>
+            <BlueEllipse />
+        </div>
     );
 }
