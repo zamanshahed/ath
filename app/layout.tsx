@@ -7,6 +7,7 @@ import "./globals.css";
 import LeftEclipse from "./components/layout/LeftEclipse";
 import RightEclipse from "./components/layout/RightEclipse";
 import MidEclipse from "./components/layout/MidEclipse";
+import ScrollWrapper from "./components/utils/ScrollWrapper";
 
 const inter = Inter({
     variable: "--font-inter",

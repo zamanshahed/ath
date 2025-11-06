@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Sidebar() {
     return (
-        <div className="absolute top-[108px] left-6 z-50 w-[72px] max-h-[calc(100vh-120px)] no-scrollbar overflow-y-auto overflow-x-clip border rounded-2xl px-4 py-6 mb-5 space-y-4">
+        <div className="fixed top-[108px] left-6 z-50 w-[72px] max-h-[calc(100vh-120px)] no-scrollbar overflow-y-auto overflow-x-clip border rounded-2xl px-4 py-6 mb-5 space-y-4">
             <Image
                 src={"/images/icons/dashboard.svg"}
                 alt="dashboard-icon"
