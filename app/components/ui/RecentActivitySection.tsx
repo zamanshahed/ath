@@ -5,7 +5,7 @@ import RecentActivityCard from "../cards/RecentActivityCard";
 
 export default function RecentActivity() {
     return (
-        <div className="w-full max-w-[465px]">
+        <div className="w-full">
             <GlassCard>
                 <div>
                     <div className="flex items-center justify-between">
