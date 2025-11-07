@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button from "../Button";
+import Button from "../buttons/Button";
 import GlassCard from "../cards/GlassCard";
 import RecentActivityCard from "../cards/RecentActivityCard";
 

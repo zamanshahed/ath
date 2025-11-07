@@ -1,4 +1,4 @@
-import Button from "../Button";
+import Button from "../buttons/Button";
 import CoachFeedbackCard from "../cards/CoachFeedbackCard";
 import GlassCard from "../cards/GlassCard";
 
