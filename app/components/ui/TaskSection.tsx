@@ -1,6 +1,7 @@
-import React from "react";
-import GlassCard from "../cards/GlassCard";
 import Button from "../buttons/Button";
+import DateCard from "../cards/DateCard";
+import GlassCard from "../cards/GlassCard";
+import TaskCard from "../cards/TaskCard";
 
 export default function TaskSection() {
     const tasks = [
@@ -74,53 +75,46 @@ export default function TaskSection() {
                         />
                     ))}
                 </div>
-            </GlassCard>
-        </div>
-    );
-}
 
-function DateCard({
-    dayName,
-    value,
-    isActive,
-    isOrangeDot = false,
-    isBlueDot = false,
-}: {
-    dayName: string;
-    value: string;
-    isActive?: boolean;
-    isOrangeDot?: boolean;
-    isBlueDot?: boolean;
-}) {
-    return (
-        <div
-            style={{
-                filter: isActive
-                    ? "drop-shadow(0px 4px 15.7px rgba(188, 204, 255, 0.51))"
-                    : "",
-            }}
-            className={`   rounded-2xl h-20 w-full flex flex-col items-center justify-center px-4 ${
-                isActive ? "bg-white" : "bg-white/40"
-            } relative`}
-        >
-            {isBlueDot || isOrangeDot ? (
-                <div className="absolute top-2.5 right-[13px]">
-                    <div
-                        style={{
-                            boxShadow: isBlueDot
-                                ? "0px 2px 4px 0px rgba(45, 106, 238, 0.6)"
-                                : "0px 2px 4px 0px #EAB468",
-                        }}
-                        className={`w-[6px] h-[6px] rounded-full ${
-                            isBlueDot
-                                ? "bg-linear-to-b from-[#5C8FF7] to-[#276AEE] border-t border-[#68B0EA]"
-                                : "bg-linear-to-b from-[#F7E75C] to-[#CC7B1F] border-t border-[#EAB468]"
-                        }`}
-                    ></div>
+                <div className="pt-5 space-y-2">
+                    <TaskCard
+                        isActive
+                        title="Linebacker Drills"
+                        description="Hawaii Trench Warriors"
+                        isOrangeDot={false}
+                        isLive={false}
+                        isVidRequired={true}
+                        dueDate={"Due Today"}
+                        isCompleted={false}
+                        actionBtnIcon="/images/icons/upload-circle-01.svg"
+                        actionBtnText="Upload"
+                    />
+                    <TaskCard
+                        title="University of Oregon Virtual Camp"
+                        description="Hawaii Trench Warriors"
+                        isOrangeDot={true}
+                        isLive={true}
+                        dueTime="5:30 pm"
+                        isCompleted={false}
+                        actionBtnIcon="/images/icons/bell.svg"
+                        actionBtnText="Upload"
+                    />
+                    <TaskCard
+                        title="QB Fundamentals"
+                        description="Hawaii Trench Warriors"
+                        isCompleted={true}
+                        // actionBtnIcon="/images/icons/bell.svg"
+                        actionBtnText="Done"
+                    />
+                    <TaskCard
+                        title="Practice Reading Offense Quiz"
+                        description="Hawaii Trench Warriors"
+                        dueDate="3 days left"
+                        actionBtnIcon="/images/icons/play.svg"
+                        actionBtnText="Start"
+                    />
                 </div>
-            ) : null}
-            <div className="text-[#141B34] text-lg">{dayName}</div>
-            <div className="text-[#141B34] text-xs pt-1">{value}</div>
+            </GlassCard>
         </div>
     );
 }
