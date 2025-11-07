@@ -12,7 +12,7 @@ export default function LeaderboardCard() {
                 className="absolute left-[-40px] bottom-[-110px] w-full h-full object-cover rotate-[150deg] blur-3xl opacity-70"
             />
 
-            <Image
+            {/* <Image
                 src="/images/lead/lead-01.svg"
                 alt="leaderboard"
                 width={160}
@@ -34,7 +34,7 @@ export default function LeaderboardCard() {
                 width={160}
                 height={300}
                 className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-cover"
-            />
+            /> */}
         </div>
     );
 }
