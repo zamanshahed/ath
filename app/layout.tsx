@@ -30,7 +30,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${inter.variable} antialiased bg-[#E7F2F5] pt-[108px] pl-[120px] pr-[40px] max-w-[1440px] mx-auto`}
+                className={`${inter.variable} antialiased bg-[#E7F2F5] pt-[90px] pl-[120px] pr-[40px] max-w-[1440px] mx-auto`}
                 style={{
                     fontFamily: inter.style.fontFamily,
                 }}
