@@ -37,7 +37,7 @@ export default function LeaderboardSection() {
                     <LeadUserCard
                         name="Kristin Watson"
                         points={184}
-                        position={  7}
+                        position={7}
                         image="/images/user/l7.png"
                     />
                     <LeadUserCard
@@ -45,6 +45,18 @@ export default function LeaderboardSection() {
                         points={172}
                         position={8}
                         image="/images/user/l8.png"
+                    />
+                    <LeadUserCard
+                        name="Marvin McKinney"
+                        points={165}
+                        position={9}
+                        image="/images/user/l6.png"
+                    />
+                    <LeadUserCard
+                        name="Kristin Watson"
+                        points={124}
+                        position={10}
+                        image="/images/user/l7.png"
                     />
                 </div>
             </GlassCard>

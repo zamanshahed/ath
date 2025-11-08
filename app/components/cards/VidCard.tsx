@@ -40,7 +40,7 @@ export default function VidCard({
                     className="rounded-xl"
                 />
             </div>
-            <h3 className="text-sm font-medium pb-2.5 pt-5">{title}</h3>
+            <h3 className="text-sm font-medium pb-2.5 pt-5 leading-4">{title}</h3>
             <LinearProgressbar value={progress} />
             <div className="flex items-center justify-between pt-4">
                 <div className="flex items-center space-x-2">
