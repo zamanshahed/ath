@@ -4,7 +4,7 @@ import RoundCard from "./RoundCard";
 
 export default function Topbar() {
     return (
-        <div className="fixed top-0 left-0 right-0 z-[99999] w-full bg-transparent backdrop-blur-2xl py-2.5">
+        <div className="fixed top-0 left-0 right-0 z-[99999] w-full bg-white/20 backdrop-blur-[10px] py-2 border-b border-white/20">
             <div className="mx-auto px-12">
                 {/* <GlassCard> */}
                     <div className="flex justify-between items-center">
@@ -16,7 +16,7 @@ export default function Topbar() {
                                 height={28}
                             />
 
-                            <div className="space-y-1">
+                            <div className="space-y-0.5">
                                 <h3>Welcome Back, Mark</h3>
                                 <span className="font-medium">
                                     <span className="text-black/40 pr-2">
@@ -29,7 +29,7 @@ export default function Topbar() {
                         <div className="flex items-center">
                             <div className="flex items-center justify-center bg-transparent">
                                 <div className="w-full max-w-[402px]">
-                                    <div className="relative w-full bg-white/30 backdrop-blur-2xl border-x border-white/20 p-6 flex items-center gap-4">
+                                    <div className="relative w-full bg-white/30 rounded-full overflow-hidden backdrop-blur-2xl border-x border-white/20 px-4 py-2 flex items-center gap-4">
                                         <Image
                                             src={"/images/icons/search.svg"}
                                             alt="Search-icon"
