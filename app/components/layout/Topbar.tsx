@@ -4,7 +4,7 @@ import RoundCard from "./RoundCard";
 
 export default function Topbar() {
     return (
-        <div className="fixed top-3 left-0 right-0 z-[99999] w-full bg-transparent">
+        <div className="fixed top-0 left-0 right-0 z-[99999] w-full bg-transparent backdrop-blur-2xl py-2.5">
             <div className="mx-auto px-12">
                 {/* <GlassCard> */}
                     <div className="flex justify-between items-center">
